@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <title>Welcoming New Year</title>
+  <style>
+    #im {
+      margin: 0 auto;
+    }
+    #im2 {
+      display: none;
+    }
+  </style>
+  
+  <style>
+    body {
+      background-color: black;
+      font-family: cursive;
+    }
+    
+    .glow {
+      font-size: 80px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6b000, 0 0 40px #e6cf00, 0 0 50px #e69d00, 0 0 60px #e6c400, 0 0 70px #e6c400;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ffe44d, 0 0 40px #ffed4d, 0 0 50px #fff34d, 0 0 60px #ffd04d, 0 0 70px #ffd54d, 0 0 80px #ffd54d;
+      }
+    }
+    </style>  
+
+</head>
+
+<body >
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content"  style="background-color: rgb(51, 18, 66);">
+            <span class="card-title"></span>
+            <center><h1 class="glow"   style="font-style: inherit;">Happy New Year</h1></center>
+            <div class="row">
+              <div id="im2">
+                <img src="img/im2.gif" alt="im2">
+              </div>
+               <!-- LOADER -->
+            <div id="im">
+              <img src="img/im.gif" alt="">
+            </div>
+            <br>
+            <br>
+            <div >
+      
+              <center> <button onclick="newquote()" id="changeBtn" style="background-color: rgb(170, 110, 226);font-size: xx-large;" >Know how would be your next year</button>
+            </div>
+           </center>
+            
+            </div>
+            
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
